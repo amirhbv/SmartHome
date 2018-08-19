@@ -6,13 +6,12 @@
 		<!--                    for mobile device                    -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!--                           css                           -->
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="shortcut icon" href="favicon.png" />
-
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png') }}" />
 		<!--                       javascript                        -->
-		<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
@@ -40,7 +39,7 @@
 		<div class="modal fade" id="LoginModal" role="dialog">
 			<div class="modal-dialog">
 			<!-- Modal content-->
-			<img id="profile-img" class="profile-img-card" src="login.png" />
+			<img id="profile-img" class="profile-img-card" src="{{ url_for('static', filename='img/login.png') }}" />
 			<div class="modal-content">
 				<div class="modal-body" style="text-align: center;">
 				<p>
@@ -64,40 +63,40 @@
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner">
 							<div class="item active">
-								<img id="about-img" class="about-img" src="nasim.jpg" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/nasim.jpg') }}" />
 								<p style="text-align: center;">Nasim Shakoei</p>
 							</div>
 
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Yasamin Niknam</p>
 							</div>
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Amirhossein Habibvand</p>
 							</div>
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Ehsan Aghazadeh</p>
 							</div>
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Sepideh Rahmanian</p>
 							</div>
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Ali keramatipour</p>
 							</div>
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Sadegh Haeri</p>
 							</div>
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Behzad Ousat</p>
 							</div>
 							<div class="item">
-								<img id="about-img" class="about-img" src="login.png" />
+								<img id="about-img" class="about-img" src="{{ url_for('static', filename='img/login.png') }}" />
 								<p style="text-align: center;">Ali toufighi</p>
 							</div>
 						</div>
