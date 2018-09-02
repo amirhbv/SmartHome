@@ -14,7 +14,8 @@ def getTemp():
     return data['temp']
 
 @bp.route('/humidity')
-def gethumidity():
+def getHumidity():
     res = requests.post('ip')
     data = json.load(res.text)
     return data['humidity']
+

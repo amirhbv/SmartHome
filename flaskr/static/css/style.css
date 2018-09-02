@@ -55,3 +55,131 @@ nav ul li a:hover {
     -webkit-border-radius: 50%;
     border-radius: 80%;
 }
+
+.invisible {
+  display: none;
+}
+
+.IOT_grids{
+  font-size: 1em;
+
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:#072237;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #072237;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.right_light{
+  float: right;
+  margin-right: 60px;
+}
+
+.time_styles{
+    font-size: -webkit-xxx-large;
+
+}
+.date_styles{
+  font-size:22px;
+}
+
+.box_color{
+  background-color: rgba(150,144,157,0.8);
+}
+
+
+.weather_google{
+  background-image:url("awesome-weather location=”Montreal” units=”F” owm_city_id=”6077243″ size=”tall” override_title=”MTL” forecast_days=”3″ hide_stats=”1″ background=”http://urltoanimage.jpg” custom_bg_color=”#cccccc” inline_style=”width: 200px; margin: 20px; float: left;” background_by_weather=”1″ text_color=”#000″ locale=”fr” ");
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation_bar{
+    height: 50%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .IOT_grids{margin-top: 5%;}
+}

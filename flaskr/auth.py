@@ -10,7 +10,7 @@ from flaskr.db import get_db
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 
 @bp.route('/register', methods=('GET', 'POST'))
-def register(): # To Do
+def register(): # ToDo
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
