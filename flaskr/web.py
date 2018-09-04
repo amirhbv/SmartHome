@@ -14,7 +14,9 @@ def getTemp():
     res = requests.post(nodeIP + '/temp')
     print(res.text)
     data = json.loads(res.text)
-    return data['temp']
+    temp = float(data['temp'])
+    temp -= 7
+    return str(temp)
 
 @bp.route('/humidity')
 def getHumidity():

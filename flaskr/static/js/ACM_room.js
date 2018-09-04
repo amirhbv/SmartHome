@@ -95,7 +95,7 @@ function switchLight(checkbox) {
     }
 
 
-    url = checkbox.checed ? "/web/switchLight/off" : "/web/switchLight/on";
+    url = checkbox.checked ? "/web/switchLight/off" : "/web/switchLight/on";
     xmlhttp.open("GET", url, true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     // data = "{ ";
