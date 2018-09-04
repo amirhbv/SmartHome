@@ -1,3 +1,5 @@
+nodeIP = 'http://192.168.43.175'
+
 import functools, requests, json
 
 from flask import (
@@ -9,17 +11,23 @@ bp = Blueprint('web', __name__, url_prefix='/web')
 
 @bp.route('/temp')
 def getTemp():
-    # res = requests.post('ip')
-    # data = json.load(res.text)
-    # return data['temp']
-    return '20'
+    res = requests.post(nodeIP + '/temp')
+    print(res.text)
+    data = json.loads(res.text)
+    return data['temp']
 
 @bp.route('/humidity')
 def getHumidity():
-    # res = requests.post('ip')
-    # data = json.load(res.text)
-    # return data['humidity']
-    return '20000'
+    res = requests.post(nodeIP + '/humidity')
+    data = json.load(res.text)
+    return data['humidity']
 
-
-{"temp" : "80"}
+@bp.route('/switchLight/<state>')
+def switchLight(state):
+    print(state)
+    if (state == "on"):
+        print(nodeIP + '/light/off')
+        requests.post(nodeIP + '/light/off')
+    else:
+        requests.post(nodeIP + '/light/on')
+    return "OK"

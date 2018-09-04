@@ -15,6 +15,7 @@
 		<script type="text/javascript" src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.js') }}"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/ACM_room.js') }}"></script>
 
 	</head>
 	<body onload="startTime()">
@@ -212,12 +213,12 @@
 						<p>Light</p>
 						<h5 class="right_light">Light1</h5>
 						<label class="switch">
-							<input type="checkbox" checked>
+							<input type="checkbox" id="Light1" checked onchange="switchLight(this)">
 							<span class="slider round"></span>
 						</label><br>
 						<h5 class="right_light">Light2</h5>
 						<label class="switch">
-							<input type="checkbox" checked>
+							<input type="checkbox" id="Light2" checked onchange="switchLight(this)">
 							<span class="slider round"></span>
 						</label>
 
@@ -231,7 +232,6 @@
 			</div>
 		</div>
 
-		<script type="text/javascript" src="{{ url_for('static', filename='js/ACM_room.js') }}"></script>
 
 	</body>
 
