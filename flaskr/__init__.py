@@ -28,8 +28,8 @@ def create_app(test_config = None):
     from . import auth
     app.register_blueprint(auth.bp)
 
-    from . import web
-    app.register_blueprint(web.bp)
+    from . import api
+    app.register_blueprint(api.bp)
 
     @app.route('/')
     def index():

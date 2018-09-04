@@ -57,7 +57,7 @@ function getTemp() {
     else {// code for IE6, IE5
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xmlhttp.open("GET", "/web/temp", true);
+    xmlhttp.open("GET", "/api/temp", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
     xmlhttp.onreadystatechange = function () {
@@ -75,7 +75,7 @@ function getHumidity() {
     else {// code for IE6, IE5
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
-    xmlhttp.open("GET", "/web/humidity", true);
+    xmlhttp.open("GET", "/api/humidity", true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send();
     xmlhttp.onreadystatechange = function () {
@@ -95,7 +95,7 @@ function switchLight(checkbox) {
     }
 
 
-    url = checkbox.checked ? "/web/switchLight/off" : "/web/switchLight/on";
+    url = checkbox.checked ? "/api/switchLight/off" : "/api/switchLight/on";
     xmlhttp.open("GET", url, true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     // data = "{ ";
